@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import TodoList from './components/TodoList';
 
 TodoFeature.propTypes = {
@@ -10,15 +10,18 @@ function TodoFeature(props) {
     const todoList = [
         {
             id: 1,
-            title: 'Learn'
+            title: 'Learn',
+            status: 'new',
         },
         {
             id: 2,
-            title: 'Worrk'
+            title: 'Worrk',
+            status: 'completed',
         },
         {
             id: 1,
-            title: 'Relax'
+            title: 'Relax',
+            status: 'new',
         },
     ]
 

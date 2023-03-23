@@ -10,8 +10,6 @@ TodoList.defaultProps = {
     todoList: []
 }
 
-
-
 function TodoList({todoList}) {
     
     return (

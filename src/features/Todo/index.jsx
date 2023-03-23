@@ -20,14 +20,12 @@ function TodoFeature(props) {
             id: 1,
             title: 'Relax'
         },
-
     ]
 
     return (
         <div>
             <h3>Todo List</h3>
             <TodoList todoList={todoList}/>
-            
         </div>
     );
 }

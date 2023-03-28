@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import {Routes, Route, Link, NavLink, Navigate} from 'react-router-dom';
 import TodoFeature from './features/Todo';
 import AlbumFeature from './features/Album';
 // import ColoBox from './components/ColorBox';
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className='App'>
       Header
+
       <p><Link to="/todos">Todos</Link></p>
       <p><Link to="/albums">Albums</Link></p>
 
@@ -19,9 +20,12 @@ function App() {
       <p><NavLink to="/albums">Albums</NavLink></p>
       
       <Routes>
-        < Route path='/todos' element = {<TodoFeature/>} />
-        < Route path='/albums' element = {<AlbumFeature/>} />
+        <Route path="/home" element={<Navigate to="/" />} />
+        <Route path="/about" element={<Navigate to="/" />} />
+        <Route path='/todos' element = {<TodoFeature/>} />
+        <Route path='/albums' element = {<AlbumFeature/>} />
       </Routes>
+      
       Footer
     </div>
   );

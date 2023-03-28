@@ -13,15 +13,16 @@ function App() {
     <div className='App'>
       Header
 
-      <p><Link to="/todos">Todos</Link></p>
+      {/* <p><Link to="/todos">Todos</Link></p>
       <p><Link to="/albums">Albums</Link></p>
 
       <p><NavLink to="/todos" activeClassName='active-menu'>Todos</NavLink></p>
-      <p><NavLink to="/albums">Albums</NavLink></p>
+      <p><NavLink to="/albums">Albums</NavLink></p> */}
       
       <Routes>
-        <Route path="/home" element={<Navigate to="/" />} />
-        <Route path="/about" element={<Navigate to="/" />} />
+        {/* <Route path="/home" element={<Navigate to="/" />} />
+        <Route path="/about" element={<Navigate to="/" />} /> */}
+        <Route path='/' element = {<TodoFeature/>} exact />
         <Route path='/todos' element = {<TodoFeature/>} />
         <Route path='/albums' element = {<AlbumFeature/>} />
       </Routes>

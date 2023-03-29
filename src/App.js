@@ -4,6 +4,7 @@ import React from 'react';
 import {Routes, Route, Link, NavLink, Navigate} from 'react-router-dom';
 import TodoFeature from './features/Todo';
 import AlbumFeature from './features/Album';
+import NotFound from './components/NotFound';
 // import ColoBox from './components/ColorBox';
 // import Counter from './components/Counter';
 
@@ -25,6 +26,8 @@ function App() {
         <Route path='/' element = {<TodoFeature/>} exact />
         <Route path='/todos' element = {<TodoFeature/>} />
         <Route path='/albums' element = {<AlbumFeature/>} />
+
+        <Route element = {<NotFound/>} />
       </Routes>
       
       Footer
